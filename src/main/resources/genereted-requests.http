@@ -1,0 +1,11 @@
+###
+
+
+
+POST http://localhost:8080/v1/payment
+Content-Type: application/json
+
+{"orderId": "123",
+"paymentType": "wireCard",
+"amount" : 123.5
+}
