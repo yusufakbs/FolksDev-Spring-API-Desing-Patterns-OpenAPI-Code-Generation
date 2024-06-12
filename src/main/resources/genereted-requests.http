@@ -2,10 +2,28 @@
 
 
 
+POST http://localhost:8080/v2/payment
+Content-Type: application/json
+
+{"orderId": "123",
+"paymentType": "creditCard",
+"amount" : 123.5
+}
+
+###
 POST http://localhost:8080/v1/payment
 Content-Type: application/json
 
 {"orderId": "123",
-"paymentType": "wireCard",
-"amount" : 123.5
+  "paymentType": "creditCard",
+  "amount" : 123.5
+}
+
+###
+POST http://localhost:8080/v3/payment
+Content-Type: application/json
+
+{"orderId": "123",
+  "paymentType": "creditCard",
+  "amount" : 123.5
 }
